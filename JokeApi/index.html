@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Joke Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- floating particles -->
+  <div class="particles"></div>
+
+  <div class="holo-card">
+    <div class="card-inner">
+
+      <header>
+        <div class="holo-icon">😂</div>
+        <h1>JOKE CORE</h1>
+        <span class="tagline">Laugh Engine v1.0</span>
+      </header>
+
+      <section class="controls">
+        <div class="field">
+          <label>Category</label>
+          <select id="category">
+            <option value="Any">Any</option>
+            <option value="Programming">Programming</option>
+            <option value="Misc">Misc</option>
+            <option value="Dark">Dark</option>
+            <option value="Pun">Pun</option>
+            <option value="Spooky">Spooky</option>
+            <option value="Christmas">Christmas</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Mode</label>
+          <select id="type">
+            <option value="clean">Clean</option>
+            <option value="dark">Dark</option>
+          </select>
+        </div>
+
+        <button onclick="getJoke()">⚡ GENERATE</button>
+      </section>
+
+      <section class="joke-panel">
+        <p id="joke" class="show">Initialize laughter protocol 😂</p>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="java.js"></script>
+</body>
+</html>
